@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Кнопка для смены мест отправления и прибытия -->
+    <Button
+        android:id="@+id/buttonSwap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сменить"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="swapLocations"/>
+
+    <!-- Дата отправления -->
+    <TextView
+        android:id="@+id/textViewDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата отправления:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDepartureDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Выберите дату"
+        android:inputType="none"
+        android:layout_below="@id/textViewDepartureDate"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Дата обратного билета -->
+    <TextView
+        android:id="@+id/textViewReturnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата обратного билета:"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextDepartureDate"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextReturnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Выберите дату (опционально)"
+        android:inputType="none"
+        android:layout_below="@id/textViewReturnDate"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Число пассажиров и класс -->
+    <TextView
+        android:id="@+id/textViewPassengersClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 пассажир, эконом класс"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextReturnDate"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Фильтры (нефункциональный элемент) -->
+    <TextView
+        android:id="@+id/textViewFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фильтры"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewPassengersClass"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Рекомендации билетов -->
+    <TextView
+        android:id="@+id/textViewTicketRecommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рекомендации билетов:"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewFilters"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- RecyclerView для рекомендаций билетов -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTicketOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTicketRecommendations"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Кнопка "Поиск билетов" -->
+    <Button
+        android:id="@+id/buttonSearchTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск билетов"
+        android:layout_below="@id/recyclerViewTicketOffers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Нефункциональный элемент (по желанию) -->
+    <TextView
+        android:id="@+id/textViewNonFunctional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нефункциональный элемент"
+        android:textSize="18sp"
+        android:layout_below="@id/buttonSearchTickets"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/countrySearchFragment">
+
+    <!-- Country Search Fragment -->
+    <fragment
+        android:id="@+id/countrySearchFragment"
+        android:name="com.example.ticketsearchapp.ui.fragments.CountrySearchFragment"
+        android:label="Country Search"
+        tools:layout="@layout/fragment_country_search">
+        <action
+            android:id="@+id/action_countrySearchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ticketsearchapp.ui.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewAllTicketsFragment"
+            app:destination="@id/viewAllTicketsFragment" />
+    </fragment>
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.ticketsearchapp.ui.fragments.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+    </fragment>
+
+    <!-- View All Tickets Fragment -->
+    <fragment
+        android:id="@+id/viewAllTicketsFragment"
+        android:name="com.example.ticketsearchapp.ui.fragments.ViewAllTicketsFragment"
+        android:label="View All Tickets"
+        tools:layout="@layout/fragment_view_all_tickets">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Поле ввода места прибытия -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Куда"
+        android:inputType="text"
+        android:layout_margin="16dp"/>
+
+    <!-- Иконка крестика для очистки поля -->
+    <ImageView
+        android:id="@+id/imageViewClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear"
+        android:layout_alignEnd="@id/editTextSearch"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <!-- Подсказки -->
+    <TextView
+        android:id="@+id/textViewHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSearch"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Подсказки:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layoutHints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewHints"
+        android:layout_marginTop="8dp">
+
+        <!-- Хардкодированные элементы подсказок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сложный маршрут"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onHintClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Куда угодно"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onHintClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выходные"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onHintClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Горящие билеты"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onHintClicked"/>
+
+    </LinearLayout>
+
+    <!-- Рекомендации мест прибытия -->
+    <TextView
+        android:id="@+id/textViewRecommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHints"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Рекомендации:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layoutRecommendations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewRecommendations"
+        android:layout_marginTop="8dp">
+
+        <!-- Хардкодированные элементы рекомендаций -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Париж"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onRecommendationClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Лондон"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onRecommendationClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Токио"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onRecommendationClicked"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+[versions]
+agp = "8.3.2"
+androidxJunit = "1.1.3"
+appcompatVersion = "1.4.1"
+constraintlayoutVersion = "2.1.3"
+converterGson = "2.9.0"
+coreKtxVersion = "1.7.0"
+dagger = "2.41.1"
+daggerCompiler = "2.41.1"
+databindingRuntime = "8.3.2"
+espressoCoreVersion = "3.4.0"
+firebaseAnalytics = "version"
+firebaseAnalyticsVersion = "20.0.1"
+firebaseCrashlyticsGradle = "2.9.9"
+googleServices = "4.4.1"
+gson = "2.10.1"
+gsonVersion = "2.8.8"
+hiltAndroid = "2.41.1"
+hiltAndroidCompiler = "2.41.1"
+hiltAndroidGradlePlugin = "2.50"
+hiltLibrary = "version"
+hiltLifecycleViewmodel = "1.0.0-alpha03"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+kotlinGradlePlugin = "1.5.31"
+kotlinxCoroutinesAndroid = "1.7.3"
+kotlinxCoroutinesAndroidVersion = "1.5.2"
+lifecycleLivedataKtx = "2.4.0"
+lifecycleViewmodelKtx = "2.7.0"
+lifecycleViewmodelKtxVersion = "2.4.0"
+material = "1.11.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+materialVersion = "1.5.0"
+navigationFragmentKtx = "2.4.0"
+navigationSafeArgsGradlePlugin = "2.7.7"
+navigationUiKtx = "2.4.0"
+playServicesAuth = "version"
+playServicesAuthVersion = "20.2.0"
+retrofit = "2.9.0"
+
+[libraries]
+androidx-appcompat-v141 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-constraintlayout-v213 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v170 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-databinding-runtime = { module = "androidx.databinding:databinding-runtime", version.ref = "databindingRuntime" }
+androidx-espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltLifecycleViewmodel" }
+androidx-hilt-lifecycle-viewmodel = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "hiltLifecycleViewmodel" }
+androidx-hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hiltLifecycleViewmodel" }
+androidx-junit-v113 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-livedata-ktx-v240 = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx-v240 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationSafeArgsGradlePlugin" }
+androidx-navigation-fragment-ktx-v240 = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationSafeArgsGradlePlugin" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationSafeArgsGradlePlugin" }
+androidx-navigation-ui-ktx-v240 = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "hiltAndroidGradlePlugin" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "hiltAndroidGradlePlugin" }
+dagger-compiler-v2411 = { module = "com.google.dagger:dagger-compiler", version = "2.51.1" }
+dagger-v2411 = { module = "com.google.dagger:dagger", version = "2.51.1" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics", version.ref = "firebaseAnalytics" }
+firebase-analytics-v2001 = { module = "com.google.firebase:firebase-analytics", version.ref = "firebaseAnalyticsVersion" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+gson-v288 = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidGradlePlugin" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidGradlePlugin" }
+hilt-android-compiler-v2411 = { module = "com.google.dagger:hilt-android-compiler", version = "2.51.1" }
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltAndroidGradlePlugin" }
+hilt-android-v2411 = { module = "com.google.dagger:hilt-android", version = "2.51.1" }
+hilt-library = { module = "your.group:hilt-library", version.ref = "hiltLibrary" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-android-v152 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v150 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+navigation-library = { module = "your.group:navigation-library", version.ref = "hiltLibrary" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-auth-v2020 = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuthVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
